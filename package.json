@@ -4,7 +4,8 @@
   "description": "Landing page for SASS education",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "sass sass/main.scss css/style.css -w",
+    "live-server": "live-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/vafin1994/Natours/issues"
   },
-  "homepage": "https://github.com/vafin1994/Natours#readme"
+  "homepage": "https://github.com/vafin1994/Natours#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "sass": "^1.54.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "live-server": "^1.2.2"
+  }
 }
