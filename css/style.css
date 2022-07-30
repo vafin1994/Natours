@@ -397,6 +397,7 @@ body {
   clip-path: circle(50% at 50% 50%);
   transform: translateX(-3rem) skewX(12deg);
   position: relative;
+  overflow: hidden;
 }
 .story__img {
   height: 100%;
@@ -532,6 +533,19 @@ body {
   padding: 15rem 0;
   background-color: transparent;
   position: relative;
+}
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #55c57a, #28b485);
+}
+
+.book {
+  background-image: linear-gradient(113deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%, transparent), url(../img/nat-10.jpg);
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  height: 50rem;
 }
 
 /*# sourceMappingURL=style.css.map */
