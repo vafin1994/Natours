@@ -42,6 +42,7 @@
   &--green {
     background-color: $color-primary;
     color: $color-white;
+    text-align: center;
 
     &::after {
       background-color: $color-primary;
