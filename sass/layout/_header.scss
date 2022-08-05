@@ -1,5 +1,5 @@
 .header {
-  height: 95vh;
+  height: 80vh;
   background-image: linear-gradient(
                   to right bottom,
                   rgba($color-primary-light, 0.8),
@@ -7,12 +7,16 @@
   url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   position: relative;
 
-  //192dpi - High resolution apple retina
+  @supports (clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%)) or(-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%)) {
+    height: 95vh;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
 
-  @media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 1920px) {
+  //192dpi - High resolution apple retina
+  @media (min-resolution: 192dpi) and (min-width: 600px),
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px), (min-width: 1920px) {
     background-image: linear-gradient(
                     to right bottom,
                     rgba($color-secondary-light, 0.4),
